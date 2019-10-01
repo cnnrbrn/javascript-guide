@@ -155,3 +155,7 @@ Arrays can store different types of variables together:
 ```js
 const thingsArray = [11, true, "cow"];
 ```
+
+### Functions
+
+Coming soon.
