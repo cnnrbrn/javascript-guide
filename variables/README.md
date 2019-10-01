@@ -14,7 +14,7 @@ const myString = "hei";
 let myString = "hi!";
 ```
 
-There are differences between all of these but we will get to those later.
+There are differences between these but we will get to that later.
 
 ## Types
 
@@ -80,10 +80,78 @@ console.log(total);
 // "22"
 ```
 
-To convert a string to a number we can use the Number() method:
+To convert a string to a number we can use the `Number()` method:
 
 ```js
 const total = Number("2") + 2;
 console.log(total);
 // 4
+```
+
+Sometimes you will get a `number` as a `string` value from an API or some other source. You can convert it with the `Number()` method above.
+
+### Booleans
+
+`boolean` values can be either `true` or `false`.
+
+```js
+const javaScriptIsDelightful = false;
+```
+
+### Objects
+
+Objects are used to store related variables and functions. Variables inside objects are called properties. Everthing in an object lives inside curly braces: `{}`
+
+```js
+{
+  name: "Burt", // name is a "property"
+  breed: "poodle", // breed is a "property"
+}
+```
+
+Let's store that object in a variable:
+
+```js
+const pet = {
+  name: "Burt",
+  breed: "labrador"
+};
+```
+
+We can get properties from objects using dot `.` notation:
+
+```js
+console.log(pet.name);
+// Burt
+
+console.log(pet.breed);
+// labrador
+```
+
+Data we get from APIs will usually be an object or an array of objects.
+
+### Arrays
+
+Arrays are lists of variables. Values in arrays live inside square brackets: `[]`
+
+```js
+["dog", "cat", "pig"];
+```
+
+That's an array of strings. Let's store it in a variable:
+
+```js
+const petArray = ["dog", "cat", "pig"];
+```
+
+Here's an array of numbers:
+
+```js
+const numberArray = [7, 34, 18];
+```
+
+Arrays can store different types of variables together:
+
+```js
+const thingsArray = [11, true, "cow"];
 ```
