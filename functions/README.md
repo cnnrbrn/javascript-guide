@@ -36,6 +36,10 @@ Most of the time we want to pass variables into our functions so that the functi
 
 When we use `console.log`, we are passing a `string` variable into the `log` function. The `log` function then prints that variable out.
 
+```js
+console.log("I am an argument");
+```
+
 The variables that we pass in to functions are called arguments. When we declare the function we can call the argument(s) whatever we want:
 
 ```js

@@ -90,7 +90,7 @@ dogArray.forEach(function(item) {
 // {name: "Penny", breed: "Golden Retriever"}
 ```
 
-For each item in the array, a function is called that receives the item as argument. We can then do what we want with the item. `item` there is a normal function argument, we can call it anything:
+For each item in the array, a function is called that receives the item as an argument. We can then do what we want with the item. `item` there is a normal function argument, we can call it anything:
 
 ```js
 dogArray.forEach(function(dog) {
@@ -108,3 +108,5 @@ dogArray.forEach(function(dog) {
 // Labrador
 // Golden Retriever
 ```
+
+More on [functions](../functions/README.md)
