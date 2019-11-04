@@ -1,6 +1,6 @@
 # Joining strings 
 
-We can join strings together using either the `+` sign or template literals.
+We can join strings together using either concatenation with the `+` sign or template literals.
 
 These two methods are often used with the `innerHTML` method to dynamically create HTML elements from data from an API call.
 
