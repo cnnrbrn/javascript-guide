@@ -94,3 +94,38 @@ function AddTwoNumbers(number1, number2) {
 AddTwoNumbers(3, 4);
 // Result: 7
 ```
+
+## The return statement
+
+Sometimes you want to return a value from the function so that you can use it elsewhere.
+
+Let's return our variable `sum` from the function:
+
+```js
+function AddTwoNumbers(number1, number2) {
+    const sum = number1 + number2;
+    return sum;
+}
+```
+
+Now we are getting the variable `sum` back from the function and we can assign it another variable.
+
+```js
+//we call the function and assign its return value to our variable "result"
+const result = AddTwoNumbers(3, 4);
+
+console.log(result);
+// 7
+```
+
+When a `return` statement is encountered, the function exits. Nothing will run after the return.
+
+```js
+function AddTwoNumbers(number1, number2) {
+    const sum = number1 + number2;
+    return sum;
+    // nothing runs after a return
+    // so the console.log below will never execute
+    console.log("This will never run");
+}
+```
