@@ -23,10 +23,10 @@ const dog = {
 We can get properties from objects using dot `.` notation:
 
 ```js
-console.log(pet.name);
+console.log(dog.name);
 // Burt
 
-console.log(pet.breed);
+console.log(dog.breed);
 // labrador
 ```
 
