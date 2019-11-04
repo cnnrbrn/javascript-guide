@@ -1,3 +1,5 @@
+# In progress
+
 # Using fetch to make API calls
 
 First, we make the API call with the URL to the API as the argument to the fetch method:

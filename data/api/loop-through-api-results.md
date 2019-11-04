@@ -32,13 +32,15 @@ fetch("/path/to/api/")
     });
 ```
 
-In the second `then` method, we have the json data from the server. Within that function we can now do something with that data.
+In the second `then` method, we receive the json data from the server. Within that function we can now do something with that data.
 
 > All APIs return data differently. Inspect (console.log) what is returned from the API to see how to access the properties you need.
 
 When we logged our json argument above, we can see that it is an object with one property called `dogs` which has a value of an array of objects.
 
-Let's create a function we can can call from the final `then` method to loop through that array.
+Let's create a function we can call from the final `then` method to loop through that array.
+
+(More detailed info on [functions](../functions/README.md))
 
 ```js
 function loopThroughDogs(ourArgument) {
@@ -68,7 +70,7 @@ function loopThroughDogs(dogObject) {
 }
 ```
 
-We saw above that response from the API is an object with one property called `dogs`. That's the array we need to loop through. Let's get that array:
+We saw above that the response from the API is an object with one property called `dogs`. That's the array we need to loop through. Let's get that array and assign it to a variable:
 
 ```js
 function loopThroughDogs(dogObject) {
@@ -91,7 +93,9 @@ function loopThroughDogs(dogObject) {
 }
 ```
 
-Let's create a variable we can add the HTML in a string to, then add to it inside the loop:
+Let's create a variable we can add the string HTML to, then add to it inside the loop:
+
+(More detailed info on [creating innerHTML content](../variables/innerHTML-loop.md))
 
 ```js
 function loopThroughDogs(dogObject) {
