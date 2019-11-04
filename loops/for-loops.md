@@ -30,7 +30,7 @@ Below we are saying we want to start our loop count at 0.
 let i = 0;
 
 //  can also be written as
-var i = 0; // the old way
+var i = 0; // the older way
 ```
 
 We want to keep doing this loop while `i` is `less than` or `equal` to 9.
