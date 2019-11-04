@@ -40,7 +40,7 @@ When we logged our json argument above, we can see that it is an object with one
 
 Let's create a function we can call from the final `then` method to loop through that array.
 
-(More detailed info on [functions](../functions/README.md))
+(More detailed info on [functions](/functions/README.md))
 
 ```js
 function loopThroughDogs(ourArgument) {
@@ -95,7 +95,7 @@ function loopThroughDogs(dogObject) {
 
 Let's create a variable we can add the string HTML to, then add to it inside the loop:
 
-(More detailed info on [creating innerHTML content](../variables/innerHTML-loop.md))
+(More detailed info on [creating innerHTML content](/variables/innerHTML-loop.md))
 
 ```js
 function loopThroughDogs(dogObject) {
