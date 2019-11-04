@@ -56,7 +56,7 @@ doSomething("Hello!");
 
 Instead of hardcoding the message in our `console.log`, it will log the argument that we pass in to the function.
 
-`chickens` is not a great name for our variable though. Let's make it something sensible:
+`chickens` is not a great name for our argument though. Let's make it something sensible:
 
 ```js
 function doSomething(message) {

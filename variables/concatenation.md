@@ -1,4 +1,4 @@
-# Joining strings (Concatenation)
+# Joining strings 
 
 We can join strings together using either the `+` sign or template literals.
 
