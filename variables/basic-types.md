@@ -1,4 +1,4 @@
-# JavaScript Variables
+# Strings, Numbers and Booleans
 
 The old way to declare JavaScript variables was with the **var** keyword:
 

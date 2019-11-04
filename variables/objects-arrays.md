@@ -1,4 +1,4 @@
-# JavaScript Variables
+# Objects and Arrays
 
 ## Objects
 
