@@ -19,7 +19,7 @@ function doSomething() {
 }
 ```
 
-Above, we declared the function and now the browser will now know about it. But it won't run it until it is called. We call a function by using parenthesis ().
+Above, we declared the function and now the browser will know about it. But it won't run it until it is called. We call a function by using parenthesis ().
 
 ```js
 // call/invoke the function
