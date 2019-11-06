@@ -57,6 +57,7 @@ Let's create the HTML for each dog:
 
 ```js
 dogArray.forEach(function(dog) {
+
     newHTML += '<div class="dog">' +
                     '<h1>Name</h1>' +
                     '<img src="path/to/image">' +
@@ -89,6 +90,7 @@ We can get those properties from each object and join them together with the HTM
 
 ```js
 dogArray.forEach(function(dog) {
+
     newHTML +=  '<div class="dog">' +
                     '<h1>' + dog.name + '</h1>' +
                     '<img src="' +  dog.imageSrc + '">' +
@@ -113,7 +115,7 @@ We use embedded expressions made of the `$` sign and curly braces `{}` to access
 
 ```js
 dogArray.forEach(function(dog) {
-    //
+    
     newHTML += `<div class="dog">
                     <h1>${dog.name}</h1>
                     <img src="${dog.imageSrc}">
