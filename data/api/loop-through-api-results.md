@@ -101,7 +101,7 @@ Let's create a variable we can add the string HTML to, then add to it inside the
 function loopThroughDogs(dogObject) {
     const dogArray = dogObject.dogs;
 
-    const newHTML = "";
+    let newHTML = "";
 
     dogArray.forEach(function(dog) {
         // add to the HTML
@@ -139,7 +139,8 @@ function loopThroughDogs(dogObject) {
 
     const dogArray = dogObject.dogs;
 
-    const newHTML = "";
+    // the variable holding the HTML string must be declared before the loop
+    let newHTML = "";
 
     dogArray.forEach(function(dog) {
 
