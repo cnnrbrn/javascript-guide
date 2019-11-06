@@ -157,3 +157,5 @@ function loopThroughDogs(dogObject) {
 
 ---
 ```
+
+[Providing default values for missing data](default-values.md)
