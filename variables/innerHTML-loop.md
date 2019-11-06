@@ -40,7 +40,7 @@ This is the HTML we want to create for each object in the array:
 And we need a variable to store the HTML we are creating. We will give this variable an empty variable as its initial value and keep adding to this value.
 
 ```js
-const newHTML = "";
+let newHTML = "";
 ```
 
 We need to loop over the array and build an HTML string for each dog object:
@@ -57,13 +57,11 @@ Let's create the HTML for each dog:
 
 ```js
 dogArray.forEach(function(dog) {
-    newHTML +=
-        '<div class="dog">' +
-        '<div class="dog">' +
-        "<h1>Name</h1>" +
-        '<img src="path/to/image">' +
-        '<a href="path/to/more/details/id">More details</a>' +
-        "</div>";
+    newHTML += '<div class="dog">' +
+                    '<h1>Name</h1>' +
+                    '<img src="path/to/image">' +
+                    '<a href="path/to/more/details/id">More details</a>' +
+                '</div>';
 });
 ```
 
@@ -91,18 +89,11 @@ We can get those properties from each object and join them together with the HTM
 
 ```js
 dogArray.forEach(function(dog) {
-    newHTML +=
-        '<div class="dog">' +
-        "<h1>" +
-        dog.name +
-        "</h1>" +
-        '<img src="' +
-        dog.imageSrc +
-        '">' +
-        '<a href="path/to/more/details/' +
-        dog.id +
-        '">More details</a>' +
-        "</div>";
+    newHTML +=  '<div class="dog">' +
+                    '<h1>' + dog.name + '</h1>' +
+                    '<img src="' +  dog.imageSrc + '">' +
+                    '<a href="path/to/more/details/' + dog.id + '">More details</a>' +
+                '</div>';
 });
 ```
 

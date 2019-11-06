@@ -122,4 +122,37 @@ const container = document.querySelector(".container");
 container.innerHTML = newHTML;
 ```
 
+Here it is all together:
+
+```js
+//make the API call using fetch
+fetch("/path/to/api/")
+    .then(function(response) {
+        return response.json();
+    })
+    .then(function(json) {
+        loopThroughDogs(json);
+    });
+
+
+function loopThroughDogs(dogObject) {
+
+    const dogArray = dogObject.dogs;
+
+    const newHTML = "";
+
+    dogArray.forEach(function(dog) {
+
+        newHTML += `<div class="dog">
+                        <h1>${dog.name}</h1>
+                        <img src="${dog.imageSrc}">
+                        <a href="path/to/more/details/${dog.id}">More details</a>
+                    </div>`;
+    });
+
+    const container = document.querySelector(".container");
+    container.innerHTML = newHTML;
+}
+
 ---
+```
