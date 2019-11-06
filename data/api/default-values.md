@@ -31,6 +31,7 @@ We can provide default values for the missing properties before trying to use th
 
 // provide a default path for the image
 let imageUrl = "path/to/a/default/image";
+
 // provide default text for the dog name
 let name = "This dog has no name";
 
