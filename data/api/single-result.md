@@ -15,7 +15,7 @@ var id = getQueryStringValue("id");
 Now we have the `id`:
 
 ```js
-console.log("id", id);
+console.log(id);
 // abcdefg
 ```
 
