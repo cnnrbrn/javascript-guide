@@ -1,6 +1,6 @@
 # Displaying a single result from an API call
 
-To get a single, specific result from an API, we often need to send an `id` with the API call. This `id` of comes from the querystring (in the URL) on the page.
+To get a single, specific result from an API, we often need to send an `id` with the API call. This `id` often comes from the querystring (in the URL) on the page.
 
 This code will get the `id` from the URL:
 
