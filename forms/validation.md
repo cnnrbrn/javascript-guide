@@ -67,7 +67,8 @@ The following blocks of code all happen inside the function:
 ```js
 
 // if you console log the event you will see it has a lot of properties
-// if you expand it's prototype property (__proto__ in Chrome), you will see all the properties it inherits
+// if you expand it's prototype property (__proto__ in Chrome),
+// you will see all the properties it inherits
 // one of those is the function preventDefault()
 console.log(event);
 
@@ -141,7 +142,8 @@ function validateName(name) {
 contactForm.addEventListener("submit", function(event) {
 
     // if you console log the event you will see it has a lot of properties
-    // if you expand it's prototype property (__proto__ in Chrome), you will see all the properties it inherits
+    // if you expand it's prototype property (__proto__ in Chrome),
+    // you will see all the properties it inherits
     // one of those is the function preventDefault()
     console.log(event);
     
