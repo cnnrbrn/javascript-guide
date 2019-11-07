@@ -168,4 +168,40 @@ We only add the HTML between the element that we found, so everything inside
 We don't use `+=` only `=` as we are not creating the HTML in a loop.
 
 
+Here it is all together:
+
+```js
+function getQueryStringValue (key) {
+    return decodeURIComponent(window.location.search.replace(new RegExp("^(?:.*[&\\?]" + encodeURIComponent(key).replace(/[\.\+\*]/g, "\\$&") + "(?:\\=([^&]*))?)?.*$", "i"), "$1"));
+}
+
+var id = getQueryStringValue("id");
+
+const baseURL = "path/to/url/";
+
+const url = baseURL + "/" + id;
+
+fetch(url)
+    .then(function(response) {
+        return response.json();
+    })
+    .then(function(json) {
+        displayDog(json);       
+    });
+
+function displayDog(json) {
+
+    const dog = json.dog;
+
+    const dogDetails = document.querySelector(".dog-details");
+
+    dogDetails.innerHTML = `<div>
+                                <b>Id:</b> ${dog.id}
+                            </div>
+                            <div>
+                                <b>Name:</b> ${dog.name}
+                            </div>`;
+}
+```
+
 
