@@ -1,6 +1,6 @@
 # Form validation
 
-Here is a simple form.
+Here is a simple form with one input.
 
 ```html
 <form id="contactForm">
@@ -164,7 +164,7 @@ contactForm.addEventListener("submit", function(event) {
         firstNameError.style.display = "block";   
     }
     
-})
+});
 
 ```
 
