@@ -157,7 +157,7 @@ function displayDog(json) {
 }
 ```
 
-We only add the HTML between the element that we found, so everything inside
+We only add the HTML between the element that we selected, so everything inside
 
 ```html
 <div class="dog-details">
