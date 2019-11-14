@@ -1,6 +1,6 @@
-# In progress
+# TODO
 
-# Using fetch to make API calls
+<!-- # Using fetch to make API calls
 
 First, we make the API call with the URL to the API as the argument to the fetch method:
 
@@ -18,4 +18,4 @@ fetch(url).then(function(response) {
     // the function argument (response) is what is returned from the API
     console.log(response);
 });
-```
+``` -->
