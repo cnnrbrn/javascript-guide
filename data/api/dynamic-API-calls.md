@@ -44,7 +44,7 @@ function getSpecificResult(itemId, elementId) {
     }
 }
 
-// we can call the function as often we need to
+// we can call the function as often as we need to
 
 // assuming <div id="someId" class="result"></div> exists
 getSpecificResult(1, "someId");
