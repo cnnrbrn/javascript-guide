@@ -26,16 +26,14 @@ const dogArray = [
 We can provide default values for the missing properties before trying to use them.
 
 ```js
-// we create these before the loop
-
-// provide a default path for the image
-let imageUrl = "path/to/a/default/image";
-
-// provide default text for the dog name
-let name = "This dog has no name";
-
 dogArray.forEach(function(dog) {
-    //inside the loop we check the properties
+
+    // provide a default path for the image
+    let imageUrl = "path/to/a/default/image";
+
+    // provide default text for the dog name
+    let name = "This dog has no name";
+
     // check if dog.imageSrc exists and it is "truthy" - not null, undefined or an empty string
     if (dog.imageSrc) {
         imageUrl = dog.imageSrc;
