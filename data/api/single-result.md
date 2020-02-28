@@ -1,61 +1,12 @@
 # Displaying a single result from an API call
 
-To get a single, specific result from an API, we often need to send an `id` with the API call. This `id` often comes from the querystring (in the URL) on the page.
-
-This code will get the `id` from the URL:
+Assign the the path to the API to variable:
 
 ```js
-function getQueryStringValue (key) {
-    return decodeURIComponent(window.location.search.replace(new RegExp("^(?:.*[&\\?]" + encodeURIComponent(key).replace(/[\.\+\*]/g, "\\$&") + "(?:\\=([^&]*))?)?.*$", "i"), "$1"));
-}
-
-var id = getQueryStringValue("id");
+const url = "path/to/api"
 ```
 
-Now we have the `id`:
-
-```js
-console.log(id);
-// abcdefg
-```
-
-If we didn't get to the page by clicking on a card, there may not be an id to get from the URL. We can tell the user that:
-
-```js
-if(id === undefined) {
-    alert("There is no id");
-}
-```
-
-Now we have the id, we can build the URL that we will use to call the API.
-
-If this is our base URL:
-
-```js
-const baseURL = "path/to/url/";
-```
-
-and this is our id:
-
-```js
-// abcdefg
-```
-
-We can add the id to the baseURL to get the full URL we need:
-
-```js
-const url = baseURL + id;
-// path/to/url/abcdefg
-```
-
-If there is no `/` at the end of the `baseURL` we must add it when creating the `url`:
-
-```js
-const url = baseURL + "/" + id;
-// path/to/url/abcdefg
-```
-
-Now that we have created the `url` we can make the call using fetch:
+Use the variable in a fetch call:
 
 ```js
 //make the API call using fetch
@@ -171,15 +122,7 @@ We don't use `+=` only `=` as we are not creating the HTML in a loop.
 Here it is all together:
 
 ```js
-function getQueryStringValue (key) {
-    return decodeURIComponent(window.location.search.replace(new RegExp("^(?:.*[&\\?]" + encodeURIComponent(key).replace(/[\.\+\*]/g, "\\$&") + "(?:\\=([^&]*))?)?.*$", "i"), "$1"));
-}
-
-var id = getQueryStringValue("id");
-
 const baseURL = "path/to/url/";
-
-const url = baseURL + "/" + id;
 
 fetch(url)
     .then(function(response) {
