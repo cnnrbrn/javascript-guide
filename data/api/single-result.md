@@ -1,6 +1,6 @@
 # Displaying a single result from an API call
 
-Assign the the path to the API to variable:
+Assign the path to the API to variable:
 
 ```js
 const url = "path/to/api"
